@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Notes-taker-v1</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./src/style.css"
+    />
+  </head>
+  <body>
+    <div class="add-note">
+      <a href="#myModal" class="add-not">Add Note</a>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h1 class="header">Add note</h1>
+        <form class="note-form" action="">
+          <label for="">Title</label>
+          <input type="text" class="title" />
+          <label for="">Note</label>
+          <textarea name="note" class="note" cols="60" rows="10"></textarea>
+          <input class="submit" type="submit" />
+          <select name="formColor" id="formColor">
+            <option value="none">Select color</option>
+            <option value="white">White</option>
+            <option value="blur">Blur</option>
+          </select>
+          <div class="cancel">
+            <a href="#cancel" class="cancel-btn">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <table class="note-table">
+      <tr>
+        <td class="header">Title</td>
+        <td class="header">Note</td>
+      </tr>
+    </table>
+
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Xanh Mono", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #39c568;
+}
+label {
+  color: #fff;
+}
+
+.add-note {
+  background-color: transparent;
+  color: #fff;
+  width: 3rem;
+  height: 4rem;
+  padding: 0.3rem;
+
+  right: 10%;
+  position: absolute;
+  display: block;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-note:hover {
+  background-color: #00000f;
+
+  opacity: 0.7;
+  transition: ease-in-out 0.2s;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to top, #39c568, rgb(77, 112, 84));
+  color: #00000f;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #00000f;
+  color: #fff;
+  height: 2rem;
+}
+
+.submit {
+  width: 10rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+.submit:hover {
+  background: #00000f;
+  transition: ease-in-out 0.2s;
+  color: #39c568;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: -20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.5rem;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  border: 1px solid #00000f;
+  transition: 0.2s ease-in;
+  border-radius: 5px;
+}
+
+.modal:target {
+  opacity: 1;
+  top: 0;
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  width: 30rem;
+  position: relative;
+  margin: 10% auto;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.068);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.cancel {
+  background-color: transparent;
+  color: #fff;
+  width: 4rem;
+  height: 2rem;
+  padding: 0.3rem;
+
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel:hover {
+  background-color: #00000f;
+  opacity: 0.7;
+  transition: ease-in-out 0.2s;
+}
+select {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+}
+
+.cancel,
+.submit {
+  font-size: 1rem;
+  border: none;
+}
+
+.note-table {
+  background: #00000f7a;
+
+  width: 100%;
+  left: 15%;
+  top: 10%;
+  font-size: 1rem;
+  border-radius: 5px;
+
+  height: 4rem;
+}
+
+.header {
+  color: #00000f;
+  padding: 1rem;
+}
+
+.noteItem {
+  height: 2rem;
+  z-index: 1;
+}
+
+td {
+  padding: 1rem;
+}
+
+.delete-item:hover {
+  cursor: pointer;
+  color: #39c568;
+}
+
+.delete-item {
+  font-size: 2rem;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.white {
+  filter: brightness(0) invert(1);
+}
+
+.blur {
+  filter: brightness(0) invert(1) blur(1px);
+}
+
+.tdAccardion {
+  display: table-cell;
+  vertical-align: middle;
+  width: 40rem;
+}
+
+.tdNoteInnerTrigger {
+  padding: 10px 20px;
+  border: 1px solid #00000f;
+  color: #eee;
+  text-align: center;
+}
+.tdNoteInnerTrigger:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s ease all;
+}
+
+.tdNoteContent {
+  padding: 10px;
+  border: 1px solid class= "tdNoteInnerTrigger" #00000f;
+  border-top: none;
+  display: none;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
